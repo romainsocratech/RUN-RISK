@@ -81,9 +81,9 @@ with col2:
     st.markdown(f"### {niveau}")
     st.markdown("## Actions proposées")
 
-if criticite < 30:
+if pourcentage < 30:
     st.success("RUN maîtrisé – aucune action prioritaire requise.")
-elif criticite < 60:
+elif pourcentage < 60:
     st.warning("Risque modéré – recommandations ciblées à prévoir.")
     st.markdown("- Renforcer la documentation")
     st.markdown("- Sécuriser les mises en production")
@@ -100,6 +100,7 @@ else:
     for axe, score in scores.items():
         st.progress(score / 9)
         st.write(f"{axe} : {score} / 9")
+
 
 
 
