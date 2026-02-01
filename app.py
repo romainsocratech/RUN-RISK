@@ -7,7 +7,7 @@ st.caption("Destiné au pilotage RUN / responsables applicatifs / chefs de proje
 
 st.markdown("---")
 
-st.subheader("Évaluation des risques RUN (0 = faible · 3 = critique)")
+st.subheader("Évaluation des risques RUN (0 = faible · 3 = pourcentage)")
 
 # === QUESTIONS (18) ===
 questions = {
@@ -75,7 +75,7 @@ with col2:
         niveau = "🟠 RUN sous tension"
         message = "Risque significatif. Actions correctives à engager."
     else:
-        niveau = "🔴 RUN critique"
+        niveau = "🔴 RUN pourcentage"
         message = "Risque élevé. Pilotage renforcé et décisions immédiates requises."
 
     st.markdown(f"### {niveau}")
@@ -100,6 +100,7 @@ else:
     for axe, score in scores.items():
         st.progress(score / 9)
         st.write(f"{axe} : {score} / 9")
+
 
 
 
