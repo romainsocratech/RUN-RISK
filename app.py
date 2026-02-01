@@ -79,6 +79,20 @@ with col2:
         message = "Risque élevé. Pilotage renforcé et décisions immédiates requises."
 
     st.markdown(f"### {niveau}")
+    st.markdown("## Actions proposées")
+
+if criticite < 30:
+    st.success("RUN maîtrisé – aucune action prioritaire requise.")
+elif criticite < 60:
+    st.warning("Risque modéré – recommandations ciblées à prévoir.")
+    st.markdown("- Renforcer la documentation")
+    st.markdown("- Sécuriser les mises en production")
+else:
+    st.error("Risque élevé – actions prioritaires immédiates.")
+    st.markdown("- Mettre en place une cellule de pilotage RUN")
+    st.markdown("- Réduire la dépendance humaine")
+    st.markdown("- Formaliser rollback et PRA")
+
     st.write(message)
 
     st.markdown("---")
@@ -86,6 +100,7 @@ with col2:
     for axe, score in scores.items():
         st.progress(score / 9)
         st.write(f"{axe} : {score} / 9")
+
 
 
 
