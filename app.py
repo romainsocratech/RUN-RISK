@@ -21,7 +21,7 @@ questions = {
         "Gravité des incidents",
         "Capacité de résolution rapide"
     ],
-    "Changements & MEP": [
+    "Changements et stabilité MEP": [
         "Risque lors des mises en production",
         "Rollback non maîtrisé",
         "Tests insuffisants avant MEP"
@@ -100,6 +100,7 @@ else:
     for axe, score in scores.items():
         st.progress(score / 9)
         st.write(f"{axe} : {score} / 9")
+
 
 
 
