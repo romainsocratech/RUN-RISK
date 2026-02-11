@@ -1,8 +1,8 @@
 import streamlit as st
 
-st.set_page_config(page_title="RUN RISK SIMPLE", layout="wide")
+st.set_page_config(page_title="RUN Risk", layout="wide")
 
-st.title("RUN RISK – Nouvelle version")
+st.title("RUN Risk – Outil d’aide à la décision")
 
 col1, col2 = st.columns(2)
 
@@ -21,8 +21,7 @@ max_score = 18
 
 st.divider()
 st.subheader("Synthèse")
-
-st.write(f"Score : {score} / {max_score}")
+st.write(f"Score global : {score} / {max_score}")
 
 if score <= 5:
     st.success("RUN maîtrisé – aucune action prioritaire requise.")
@@ -30,3 +29,7 @@ elif score <= 12:
     st.warning("RUN sous tension – sécurisation recommandée.")
 else:
     st.error("RUN critique – plan de stabilisation immédiat recommandé.")
+
+st.divider()
+st.caption("Contact : romainbrubach@socratec.fr")
+
