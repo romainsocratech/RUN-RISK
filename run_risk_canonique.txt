@@ -1,0 +1,111 @@
+RUN RISK
+Référentiel décisionnel – Version canonique
+
+OBJECTIF
+Run Risk est un outil d’aide à la décision pour le pilotage opérationnel du RUN.
+Il permet de transformer des signaux opérationnels en décisions de gouvernance,
+sans jugement sur les personnes, sans audit, sans posture RH.
+
+LOGIQUE GÉNÉRALE
+- 6 axes d’analyse
+- 18 questions (3 par axe)
+- Notation P4 ? P0 (faible ? critique)
+- Recommandations cumulatives
+- 3 niveaux de lecture :
+  - Vue opérationnelle
+  - Vue gouvernance (DSI / CODIR)
+  - Synthèse globale CODIR / COMEX
+
+--------------------------------
+AXE 1 – Dépendance humaine & continuité
+Questions :
+- Dépendance à une personne clé
+- Absence de back-up de compétences
+- Documentation insuffisante ou inutilisable
+
+Leviers principaux :
+- Documentation minimale et utile
+- Fichiers accessibles / rétro-documentation
+- Binômage / onboarding
+- Réduction de la dépendance humaine
+
+--------------------------------
+AXE 2 – Gestion des incidents
+Questions :
+- Fréquence élevée des incidents
+- Gravité des incidents
+- Récurrence non traitée à la source
+
+Leviers principaux :
+- Priorisation stricte des incidents (P1 / P2 / P3)
+- Tableau des incidents récurrents + actions
+- Correction à la source (debug / stabilisation)
+- Cartographie des incidents critiques
+
+--------------------------------
+AXE 3 – Changements & mises en production
+Questions :
+- Risque lors des mises en production
+- Rollback non maîtrisé
+- Instabilité post-MEP
+
+Leviers principaux :
+- Checklist de mise en production standardisée
+- Rollback documenté et testé
+- Supervision renforcée post-MEP
+- Gel temporaire des mises en production si nécessaire
+
+--------------------------------
+AXE 4 – Organisation & pression RUN
+Questions :
+- Priorisation floue
+- Pression organisationnelle permanente
+- Fatigue des équipes RUN
+
+Leviers principaux :
+- Priorisation claire et assumée
+- Clarification des rôles RUN
+- Renfort externe ciblé
+- Réduction de la pression organisationnelle
+
+--------------------------------
+AXE 5 – Sécurité & résilience
+Questions :
+- PRA absent ou obsolète
+- PRA non testé / non simulé
+- Gouvernance de crise non définie
+
+Principes :
+- Le PRA est obligatoire
+- Il doit être testé et simulé (au moins 2 fois par an)
+- La gouvernance de crise doit être claire (war room)
+
+Leviers principaux :
+- Création / mise à jour du PRA
+- Tests et simulations régulières
+- Clarification des rôles en situation de crise
+
+--------------------------------
+AXE 6 – Pilotage & gouvernance RUN
+Questions :
+- Rôles et responsabilités flous
+- Arbitrage lent ou bloqué
+- Absence d’indicateurs RUN
+
+Leviers principaux :
+- Clarification des rôles et responsabilités
+- Cartographie des savoirs critiques
+- Renfort externe pour débloquer les arbitrages
+- Utilisation d’un outil d’aide à la décision (Run Risk)
+
+--------------------------------
+SYNTHÈSE CODIR / COMEX
+Le score global Run Risk n’est pas un jugement.
+Il indique si le modèle RUN actuel :
+- est maîtrisé
+- ou atteint ses limites
+
+Un score élevé signifie que le problème n’est plus technique,
+mais organisationnel, humain et décisionnel,
+et relève d’arbitrages de gouvernance.
+
